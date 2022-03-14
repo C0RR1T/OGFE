@@ -1,0 +1,21 @@
+.button {
+  border-style: solid;
+  color: white;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 15%;
+
+  &.primary {
+    background-color: #7209b7;
+    border-color: #5e0795;
+  }
+
+  &.secondary {
+    background-color: #30353f;
+    border-color: #282c34;
+  }
+
+  &.margin-left{
+    margin-left: 1rem;
+  }
+}

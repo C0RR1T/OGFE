@@ -1,19 +1,19 @@
 .dropdown-menu {
-  background: red;
+  background: #20242a;
   width: 200px;
   position: absolute;
-  top: 80px;
+  top: 25%;
   list-style: none;
   text-align: start;
 }
 
 .dropdown-menu li {
-  background: #1888ff;
+  background: #282c34;
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background: #5cabff;
+  background: #30353f;
 }
 
 .dropdown-menu.clicked {
@@ -33,4 +33,16 @@
   .fa-caret-down {
     display: none;
   }
+}
+
+.dropdown-title {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dropdown-arrow {
+  color: #fff;
+  position: absolute;
 }
