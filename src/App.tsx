@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import {Route, Routes} from "react-router-dom";
-import StartPage from "./routes/start-page/StartPage";
+import StartPage from "./routes/components/start-page/StartPage";
 
-function App() {
+export default function App() {
     return (
         <>
             <Routes>
@@ -12,5 +12,3 @@ function App() {
         </>
     );
 }
-
-export default App;
