@@ -5,13 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import Navbar from "./routes/components/navbar/Navbar";
+import {QueryClient, QueryClientProvider} from "react-query";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Navbar/>
-            <App/>
-        </BrowserRouter>
+            <BrowserRouter>
+                <Navbar/>
+                <App/>
+            </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );

@@ -3,3 +3,9 @@ export interface IRoute {
     path: string,
     title: string
 }
+
+export interface IUser {
+    username: string,
+    password: string,
+    description: string
+}

@@ -5,8 +5,7 @@ import Dropdown from "../react-components/dropdown/Dropdown";
 import "./navbar.scss";
 import {GameMenuItems} from "./GameMenuItems";
 import {Link} from "react-router-dom";
-import Button from "../../../components/button/Button";
-import {EButtonType} from "../../../static/enums/OGFE-Enums";
+import UserSection from "./user-section/UserSection";
 
 export default function Navbar() {
     return (
@@ -21,15 +20,7 @@ export default function Navbar() {
                 <Link to={"Release Notes"} className={"navbar__nav-item"}>Release Notes</Link>
                 <Link to={"faq"} className={"navbar__nav-item"}>FAQ</Link>
             </div>
-            <div className={"navbar__profile_container"}>
-                <Link to={"log-in"}>
-                    <Button label={"Log In"} type={EButtonType.SECONDARY}/>
-                </Link>
-                <Link to={"sign-up"}>
-                    <Button label={"Sign Up"} type={EButtonType.PRIMARY} marginLeft={true}/>
-                </Link>
-            </div>
+                <UserSection/>
         </div>
-
     );
 }
